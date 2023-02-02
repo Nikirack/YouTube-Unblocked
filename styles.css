@@ -13,3 +13,8 @@ body{
 form{
     line-height: 5;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
