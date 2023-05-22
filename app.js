@@ -1,11 +1,10 @@
-const url = window.location.href;
-const searchParams = new URL(url).searchParams;
-const urlSearchParams = new URLSearchParams(searchParams);
-const res = Array.from(urlSearchParams.entries());
 
-const input = urlSearchParams.get('vid') 
-console.log(input)
 window.addEventListener('load', function () {
+    const url = window.location.href;
+    const searchParams = new URL(url).searchParams;
+    const urlSearchParams = new URLSearchParams(searchParams);
+    const res = Array.from(urlSearchParams.entries());
+    const input = urlSearchParams.get('vid') 
     document.getElementById('YouTubeVideo').src = "https://www.youtube.com/embed/"+input.split("=").pop();
 
 })
