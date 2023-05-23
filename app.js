@@ -14,5 +14,5 @@ function LoadVideo() {
     window.location.assign(url+"?vid="+input) 
 }
 function Bookmark() {
-    alert('javascript:const url = window.location.href";window.location.assign("http://nikirack.github.io/YouTube-Unblocked?vid="+url);');
+    alert('javascript:const url = window.location.href;window.location.assign("http://nikirack.github.io/YouTube-Unblocked?vid="+url);');
 }
